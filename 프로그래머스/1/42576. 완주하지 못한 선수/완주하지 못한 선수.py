@@ -5,4 +5,4 @@ def solution(participant, completion):
     for i in completion:
         dict[i]-=1
     
-    return sorted(dict, key=lambda x : dict[x], reverse=True)[0]
+    return sorted(dict.items(), key=lambda x : x[1], reverse=True)[0][0]
