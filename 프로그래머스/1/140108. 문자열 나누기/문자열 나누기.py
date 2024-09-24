@@ -11,8 +11,6 @@ def solution(s):
             if i != len(s)-1:
                 x = s[i+1]
                 x_count, not_x_count = 0, 0
-            else:
-                break
         elif x_count != not_x_count and i == len(s)-1:
             answer+=1
     return answer
